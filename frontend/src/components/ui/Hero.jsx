@@ -49,7 +49,7 @@ export default function Hero() {
                     <span className="hero__cursor" />
                 </div>
                 <p className="hero__bio">
-                    {profile ? profile.bio : 'Estudiante de ingeniería apasionado por construir productos web modernos con código limpio y criterio técnico.'}
+                    Ingeniero de Sistemas en formación enfocado en el desarrollo web moderno. Especializado en crear aplicaciones eficientes y centradas en el usuario, siempre impulsado por una pasión constante por la innovación tecnológica.
                 </p>
                 <div className="hero__actions">
                     <a href="#proyectos" className="btn btn--primary">Ver proyectos</a>
