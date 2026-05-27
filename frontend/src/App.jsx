@@ -1,8 +1,15 @@
+import { PortfolioProvider } from './context/PortfolioContext'
+import Navbar from './components/layout/Navbar'
+import Hero from './components/ui/Hero'
+
 function App() {
   return (
-    <div>
-      <h1>Hola mundo</h1>
-    </div>
+    <PortfolioProvider>
+      <Navbar />
+      <main>
+        <Hero />
+      </main>
+    </PortfolioProvider>
   )
 }
 
