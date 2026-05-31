@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react'
 
 const navLinks = [
     { label: 'Inicio', href: '#hero' },
+    { label: 'Sobre mí', href: '#sobre-mi' },
+    { label: 'Tecnologías', href: '#tecnologias' },
     { label: 'Proyectos', href: '#proyectos' },
-    { label: 'Sobre mi', href: '#sobre-mi' },
     { label: 'Contacto', href: '#contacto' },
 ]
 
