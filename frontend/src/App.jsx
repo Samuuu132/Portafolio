@@ -1,8 +1,10 @@
 import { PortfolioProvider } from './context/PortfolioContext'
 import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
 import Hero from './components/ui/Hero'
 import About from './components/ui/About'
 import Projects from './components/ui/Projects'
+import Contact from './components/ui/Contact'
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
         <Hero />
         <About />
         <Projects />
+        <Contact />
       </main>
+      <Footer />
     </PortfolioProvider>
   )
 }

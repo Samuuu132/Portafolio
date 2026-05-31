@@ -1,0 +1,107 @@
+.contact {
+    padding: 6rem 2rem;
+    background: var(--color-surface);
+}
+
+.contact__inner {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact__label {
+    display: inline-block;
+    color: var(--color-accent);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.contact__title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
+}
+
+.contact__subtitle {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    margin-bottom: 3rem;
+}
+
+.contact__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.contact__card {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.contact__card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-accent);
+    transform: translateY(-4px);
+}
+
+.contact__card-icon {
+    font-size: 2rem;
+}
+
+.contact__card-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+}
+
+.contact__card-value {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    word-break: break-all;
+}
+
+.contact__cta {
+    display: inline-block;
+    background: var(--color-accent);
+    color: #fff;
+    padding: 0.875rem 2.5rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.contact__cta:hover {
+    background: var(--color-accent-dark);
+    transform: translateY(-2px);
+}
+
+.contact--visible .contact__inner {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact__inner {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}

@@ -36,7 +36,7 @@ export default function Hero() {
     }, [displayed, deleting, phraseIndex])
 
     return (
-        <section className={'hero' + (visible ? ' hero--visible' : '')}>
+        <section id="hero" className={'hero' + (visible ? ' hero--visible' : '')}>
             <div className="hero__blob hero__blob--right" />
             <div className="hero__blob hero__blob--left" />
             <div className="hero__content">
